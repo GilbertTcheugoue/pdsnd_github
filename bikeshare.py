@@ -203,14 +203,14 @@ def display_raw_data(df):
     Args:
         df - Pandas DataFrame containing city data filtered by month and day
     Returns:
-        Keep returing 10 lines of raw data, till user inputs no.
+        Keep returing 15 lines of raw data, till user inputs no.
     """
     i = 0
     show_data = input("\n Will you like to see 5 lines of raw data?"
                     "Input (Yes or No): \n")
     while show_data.lower() == 'yes':
-        print(df.iloc[i:i + 10])
-        i += 10
+        print(df.iloc[i:i + 15])
+        i += 15
         show_data = input("Will you like to see 5 more lines of raw data?"
                     "Input (Yes or No): \n")
         print('-'*40)
